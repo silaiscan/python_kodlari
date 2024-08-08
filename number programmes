@@ -34,13 +34,19 @@ else:
     print("not prime number")
 
 #fibonacci numbers programme
+liste=[]
 adet=int(input("kaç adet fibonacci sayısı görüntülemek istiyorsunuz ? :"))
 a,b,i=0,1,1
-print(a)
-while i<adet:
-    print(b)
-    a,b=b,a+b
-    i=i+1
+if adet==1:
+    liste.append(a)
+    print(liste)
+else:
+    liste.insert(0,0)
+    while i<=adet:
+        liste.append(b)
+        a,b=b,a+b
+        i=i+1
+    print(liste)
 
 limit=int(input("hangi sayıya kadar olan fibonacci sayılarını görüntülemek istiyorsunuz ? :"))
 a,b=0,1
