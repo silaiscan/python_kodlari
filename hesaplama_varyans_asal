@@ -1,0 +1,17 @@
+ilk = int(input("Başlangıç değeri: "))
+son = int(input("Bitiş değeri : "))
+liste = []
+for sayi in range(ilk, son+1):
+    for i in range(2, int(sayi/2) + 2):
+        if sayi % i == 0: 
+            break
+    if i > int(sayi/2):
+        liste.append(sayi)
+print(liste)
+print("aritmetik ortalama=",sum(liste)/len(liste))
+toplam=0
+for j in liste:
+   a = int(((j-(sum(liste)/len(liste))))**2)
+   toplam+=a
+print("varyans :",toplam/len(liste))
+print("standart=",(toplam/len(liste))**0.5)
