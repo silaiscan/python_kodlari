@@ -1,0 +1,19 @@
+#dort islem
+islem=int(input("islem seciniz 1)+ 2)- 3)* 4)/ :"))
+if islem==1:
+    sayi1=float(input("1.sayiyi giriniz : "))
+    sayi2=float(input("2.sayiyi giriniz : "))
+    print("sonuc=",sayi1+sayi2)
+elif islem==2:
+    sayi1=float(input("1.sayiyi giriniz : "))
+    sayi2=float(input("2.sayiyi giriniz : "))
+    print("sonuc=",sayi1-sayi2)
+elif islem==3:
+    sayi1=float(input("1.sayiyi giriniz : "))
+    sayi2=float(input("2.sayiyi giriniz : "))
+    print("sonuc=",sayi1* sayi2)
+else:
+    bolunen=float(input("bolunen sayiyi giriniz :"))
+    bolen=float(input("bolen sayiyi giriniz :"))
+    sonuc=bolunen/bolen
+    print("bolum :",int(sonuc),"kalan",float(sonuc-int(sonuc)))
