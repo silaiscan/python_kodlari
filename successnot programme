@@ -1,21 +1,16 @@
-#midterm and final note programme
-vize=int(input("vize notunu giriniz :"))
-final=int(input("final notunu giriniz :"))
-bn=vize * 0.3+final * 0.7+ 0.5
-almasıgereken=int((50-(vize*0.3))*(10/7))
-bütsecim=str(input)
-
-if bn > 50:
-    print("başarını notunuz :",bn,"başarılı oldunuz")
-elif bn < 50:
-    bütsecim=str(input("büte girdiniz mi,(evet ya da hayır cevabı verebilirsiniz):"))
-    if bütsecim=='evet':
-        büt=int(input("büt notunuzu giriniz :"))
-        ynbn=vize * 0.3 + büt * 0.7 +0.5
-        if ynbn > 50:
-            print("yeni başarı notunuz :",ynbn," başarılı oldunuz")
-        elif ynbn < 50:
-            print("başarılı olamadınız  ,notunuz :",ynbn)
-    elif bütsecim=='hayır':
-         print("başarısız,finalden almanız gereken not :",almasıgereken)
-    
+#başarı notu programı
+vize=int(input("vize notu giriniz : "))
+final=int(input("final notu giriniz : "))
+bn=vize*0.3+final*0.7+0.5
+if bn>=50:
+    print("tebrikler basarili oldunuz,notunuz ",bn)
+else:
+    gereken=((50-vize*0.3-0.5)*10)/7
+    print("başarısız,finalden ","%.1f" %gereken ,"almalıydınız")
+    but=int(input("but notunuzu giriniz : "))
+    bn2=vize*0.3+but*0.7+0.5
+    print("yeni basari notunuz ","%.1f" %bn2)
+    if bn2>=50 :
+         print("tebrikler basarili oldunuz,notunuz ",bn2)
+    else :
+        print("basarisiz oldunuz!!!")
