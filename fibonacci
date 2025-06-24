@@ -1,0 +1,5 @@
+liste=[0,1]
+sayi=int(input("sayi giriniz :"))
+for i in range (0,sayi-2,1):
+    liste.append(liste[i]+liste[i+1])
+print("liste=",liste)
