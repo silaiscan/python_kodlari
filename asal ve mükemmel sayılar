@@ -1,0 +1,14 @@
+for i in range(1,1001,1):
+    for j in range(2,round(i**(1/2))+1,1):
+        if i%j==0:
+            break
+    else:
+        print(i,"asal sayidir") 
+
+for i in range(1,1001,1):
+    bolenler=[]
+    for j in range(1,i-1,1):
+        if i%j==0:
+            bolenler.append(j)
+    if sum(bolenler)==i:
+        print(i,"mükemmel sayidir")
