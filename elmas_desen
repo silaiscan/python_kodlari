@@ -1,0 +1,5 @@
+basamak=int(input("kaç basamaklı olsun :"))
+for i in range(1,basamak+1,1):
+    print((basamak-i)*" ",2*i*"*")
+for i in range(basamak,0,-1):
+    print((basamak-i)*" ",(i*2)*"*")
